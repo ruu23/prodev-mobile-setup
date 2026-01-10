@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# 1. Clone or navigate to your repo
+git clone https://github.com/YOUR_USERNAME/prodev-mobile-setup.git
+cd prodev-mobile-setup
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 2. Create the task directory
+mkdir prodev-mobile-app-0x00
+cd prodev-mobile-app-0x00
 
-## Get started
+# 3. Create the app-example directory
+mkdir app-example
+cd app-example
 
-1. Install dependencies
+# 4. Initialize Expo project
+npx create-expo-app@latest .
 
-   ```bash
-   npm install
-   ```
+# 5. Test your app
+npx expo start
 
-2. Start the app
+# 6. Make your code changes in app/(tabs)/index.tsx
+# Change "Welcome!" to "First App Created"
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
+# 7. Reset the project
 npm run reset-project
+
+# 8. Go back to create README
+cd ..  # Back to prodev-mobile-app-0x00
+touch README.md
+
+# 9. Edit README.md with your documentation
+
+# 10. Commit everything
+git add .
+git commit -m "Complete Task 1: First Mobile App"
+git push origin main
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## ✅ Files to Submit
 
-To learn more about developing your project with Expo, look at the following resources:
+The grading system will look for these **specific files** in your repo:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. **`prodev-mobile-setup/prodev-mobile-app-0x00/README.md`**
+   - Your documentation
 
-## Join the community
+2. **`prodev-mobile-setup/prodev-mobile-app-0x00/app-example/app/(tabs)/index.tsx`**
+   - Modified home screen with "First App Created"
 
-Join our community of developers creating universal apps.
+3. **`prodev-mobile-setup/prodev-mobile-app-0x00/app-example/constants/Colors.tsx`**
+   - Color constants (automatically created by Expo)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. **`prodev-mobile-setup/prodev-mobile-app-0x00/app-example/`**
+   - The entire app directory with all Expo files
+
+---
+
+## 💡 Why This Structure?
+
+- **`prodev-mobile-setup`** = Your main repository for all mobile tasks
+- **`prodev-mobile-app-0x00`** = Directory for THIS specific task (Task 0x00)
+- **`app-example`** = Your actual Expo application code
+- **`README.md`** = Documentation at the task level (not inside app-example)
+
+This structure allows you to have **multiple tasks** in the same repository:
+```
+prodev-mobile-setup/
+├── prodev-mobile-app-0x00/    # Task 1
+├── prodev-mobile-app-0x01/    # Task 2 (future)
+└── prodev-mobile-app-0x02/    # Task 3 (future)
+```
+
+---
+
+## 🚨 Common Mistakes to Avoid
+
+❌ **Don't do this:**
+```
+prodev-mobile-setup/
+└── app-example/               # Wrong! Missing task directory
+    └── README.md
+```
+
+❌ **Don't do this:**
+```
+prodev-mobile-setup/
+└── README.md                  # Wrong! README in wrong location
+└── app-example/
+```
+
+✅ **Correct structure:**
+```
+prodev-mobile-setup/
+└── prodev-mobile-app-0x00/
+    ├── README.md
+    └── app-example/
