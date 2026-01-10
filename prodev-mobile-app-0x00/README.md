@@ -1,86 +1,50 @@
-# 📱 Task 1: Create Your First Mobile App
+# Welcome to your Expo app 👋
 
-A comprehensive guide to scaffolding, configuring, and testing your first Expo mobile application.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
----
+## Get started
 
-## 🚀 Scaffolding the Project
+1. Install dependencies
 
-### Step 1: Navigate to Project Directory
+   ```bash
+   npm install
+   ```
 
-```bash
-cd prodev-mobile-setup
-```
+2. Start the app
 
-### Step 2: Initialize the Expo Project
+   ```bash
+   npx expo start
+   ```
 
-Created a new Expo project using the latest Expo Router template:
+In the output, you'll find options to open the app in a
 
-```bash
-npx create-expo-app@latest .
-```
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-**Project Configuration:**
-- Expo framework
-- Expo Router
-- TypeScript support
-- Default folder structure for routing and tabs
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
----
+## Get a fresh project
 
-## ✏️ Modifying the Home Screen
-
-**File Location:** `app/(tabs)/index.tsx`
-
-**Changes Made:**
-- Located the default text: `Welcome!`
-- Replaced with: `First App Created`
-
----
-
-## 🧪 Running and Testing the Application
-
-### Starting the Development Server
-
-```bash
-npx expo start
-```
-
-### Testing on Physical Devices
-
-**Android Devices:**
-- Scan the QR code using the **Expo Go** app
-
-**iOS Devices:**
-- Scan the QR code using the **Camera** app
-
-**Result:** ✅ Application ran successfully and displayed the updated text: *First App Created*
-
----
-
-## 🔄 Resetting the Project
-
-### Command
+When you're ready, run:
 
 ```bash
 npm run reset-project
 ```
 
-### Observations
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-The reset process successfully:
-- Removed example and demo files from the Expo template
-- Reset the project to a clean baseline state
-- Preserved core project files and structure
+## Learn more
 
-This step prepares the project for fresh development without leftover template content.
+To learn more about developing your project with Expo, look at the following resources:
 
----
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## ✨ Conclusion
+## Join the community
 
-Task 1 was completed successfully. The Expo project was scaffolded, the home screen was modified, the application was tested on a physical device, and the reset process was executed and documented as required.
+Join our community of developers creating universal apps.
 
----
-
-**Next Steps:** Ready to build your next feature! 🎉
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
